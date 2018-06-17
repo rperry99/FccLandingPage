@@ -7,23 +7,48 @@
     </head>
     <body>
         <header id="header">
-            <img id="header-img" src="img/Barology_logo.png" alt="Barology Logo">
+            <img id="header-img" src="img/logo.png" alt="Barology Logo">
             <nav id="nav-bar">
                 <ul>
                     <li><a href="#about" class="nav-link">About</a></li>
                     <li><a href="#signup" class="nav-link">Sign Up</a></li>
                     <li><a href="#location" class="nav-link">Location</a></li>                    
-                    <li><a href="#skills" class="nav-link">Skills</a></li>
                 </ul>
             </nav>
         </header>
          
         <h1>Barology <span>Learn to make the most AWESOME drinks!</span></h1>
 
-        <section id="about"></section>
-        <section id="signup"></section>
+        <hr>
+
+        <section id="about">
+            <p class="title">Learn many different things about Mixology!</p>
+            <div id="skills">
+                <div class="skill" id="drink">
+                    <p>How to make a white russian!</p>
+                    <hr>
+                </div>
+                <div class="skill" id="serve">
+                    <p>How to serve with style!</p>
+                    <hr>
+                </div>
+                <div class="skill" id="stock">
+                    <p>How to get your stock up!</p>
+                    <hr>
+                </div>
+            </div>            
+
+            <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/Cf-Q5IGwZpE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </section>
+            
+        <section id="signup">
+            <p id="news-header">Sign up for one 50% off your first class!</p>
+            <form id="form" action='https://www.freecodecamp.com/email-submit'>
+                <input id="email" type="email" placeholder='Enter your Email Address' name="email">
+                <input id='submit' type="submit" value="Sign Up">
+            </form>
+        </section>
         <section id="location"></section>
-        <section id="skills"></section>
         
         <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
     </body>

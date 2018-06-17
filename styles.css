@@ -10,8 +10,8 @@ header{
 }
 
 #header-img{
-    height: 50px;
-    padding-left: 40px;
+    height: 40px;
+    padding: 5px 0 5px 40px;
 }
 
 header ul li{
@@ -41,6 +41,76 @@ h1{
 }
 
 h1 span{
-    font-size: 18px;
+    font-size: 20px;
     display: block;
+}
+
+#about p.title {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 200;
+}
+
+#about div#skills{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#about div.skill:not(:first-child){
+    margin-left: 5px;
+}
+
+#about div.skill{
+    border: solid 1px #000;
+    width: 33%;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 5px;
+    max-width: 400px;
+    min-width: 200px;
+    background-color: rgb(190, 190, 190);
+}
+
+#video{
+    display: block;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 1500px){
+    #about div#skills{
+        flex-direction: column;
+    }
+
+    #about div.skill:not(:first-child){
+        margin-top: 5px;
+        margin-left: 0px;;
+    }
+}
+
+#signup{
+    text-align: center;
+}
+
+#signup input#email{
+    width: 50%;
+}
+
+#signup input#submit {
+    display: block;
+    margin: 0 auto;
+    margin-top: 5px;
+    background: linear-gradient( 90deg, #000, rgba(49, 49, 49, 0.925));
+    color: #fff;
+    width: 25%;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+#signup input#submit:hover{
+    cursor: pointer;
+    transform: translateY(1px);
 }
